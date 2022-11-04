@@ -1,19 +1,18 @@
 function check_prime(N){
-    let factors=0;
-    for(let i=1;i<=N;i++){
+
+    let factor=0;
+    for(i=0;i<N+1;i++){
         if(N%i===0){
-            factors++;
+            count++;
         }
     }
-    if(factors===2){
-        return true;
+    if(factor===2){
+        conmsole.lag("Prime");
     }
-    return false;
+    else{
+        conmsole.lag("Not a Prime");
 
+    }
+    
 }
 
-let answer = check_prime(13);
-if (ans == true){
-    console.log("Prime Number")
-}else{
-    console.log("Not a Prime")
